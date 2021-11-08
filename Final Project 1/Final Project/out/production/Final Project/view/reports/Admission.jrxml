@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Admission" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c607240c-8b55-4b50-a0e5-44895aff01be">
+	<parameter name="RegId" class="java.lang.String"/>
+	<parameter name="studentId" class="java.lang.String"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<line direction="BottomUp">
+				<reportElement positionType="FixRelativeToBottom" x="-20" y="101" width="595" height="1" uuid="acb182c8-6fdb-4e53-b311-e0953c700c4c"/>
+			</line>
+			<staticText>
+				<reportElement x="200" y="50" width="198" height="30" forecolor="#4F4F4F" uuid="1a369475-b2b8-45df-99b1-c126d97378dd"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rawatawatte - Moratuwa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="20" width="289" height="30" uuid="d4ec5c77-ea88-477f-995f-c252723b19e5"/>
+				<textElement>
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desafio Higher Education Center]]></text>
+			</staticText>
+			<image>
+				<reportElement x="60" y="17" width="67" height="68" uuid="ed660255-a55e-4fa6-bfba-cea694fd0878"/>
+				<imageExpression><![CDATA["D:/zip/Final Project 1/Final Project 1/Final Project/src/assest/desafio.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="3" width="100" height="30" forecolor="#A1A1A1" uuid="645583be-e74e-4555-98fa-7f2a88a0bebb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="455" y="4" width="100" height="30" forecolor="#A1A1A1" uuid="99e7dcd8-1bb5-473a-ba4f-0ab06618d284"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="27" width="595" height="30" forecolor="#757575" uuid="7a13be3c-00cd-4a7b-a5d9-36d207acee64"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admission For Student - 2021]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="271" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="140" width="150" height="30" uuid="195ff4ae-f4a4-48ae-bd0e-3188a703a997"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subject :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="186" width="150" height="30" uuid="988552ff-0cd9-4516-8e3e-c7b251283a55"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="48" width="150" height="30" uuid="51216661-48c5-46bb-9b56-bfd2e08dcafa"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registration ID :		]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="150" height="30" uuid="2d5bd32f-4263-466d-a160-a8dbfd253d2d"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student ID :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="48" width="330" height="30" forecolor="#5E5E5E" uuid="81d98a5a-cb28-4b1b-a393-3dfef85a1112"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{RegId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="90" width="330" height="30" forecolor="#5E5E5E" uuid="a9d991c6-3d81-4920-bee4-dfc43255b2c8"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="140" width="330" height="30" forecolor="#5E5E5E" uuid="19d53b42-3df6-4625-803a-14781da071e6"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="186" width="330" height="30" forecolor="#5E5E5E" uuid="2ff124d0-87b8-4ce2-8181-e05b1a12e8af"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="240" width="555" height="30" forecolor="#787878" uuid="cf2499f6-1d20-4caa-9929-1bf842b4edf6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-------------------------Payment Successfull--------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="187" width="30" height="29" forecolor="#5E5E5E" uuid="6c318ba5-03a8-4a84-a6d7-f566d211c552"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rs.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="30" forecolor="#968B8A" uuid="2a5318de-59e2-42f4-926d-e4302f5b394f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[All Right Reserved]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

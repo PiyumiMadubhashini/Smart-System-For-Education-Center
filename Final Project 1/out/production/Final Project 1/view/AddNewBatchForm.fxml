@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="666.0" prefWidth="752.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewBatchFormController">
+   <children>
+      <Pane layoutX="-8.0" prefHeight="62.0" prefWidth="801.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="31.0" layoutY="13.0" text="Batches " textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtYear" layoutX="139.0" layoutY="129.0" onAction="#txtYearOnAction" prefHeight="33.0" prefWidth="241.0" promptText="Year" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtName" layoutX="423.0" layoutY="129.0" onAction="#txtBatchNameOnAction" prefHeight="33.0" prefWidth="241.0" promptText="Batch Name" stylesheets="@../style/txtfields.css" />
+      <Label fx:id="showNewBatch" alignment="TOP_CENTER" layoutX="139.0" layoutY="195.0" prefHeight="36.0" prefWidth="532.0" style="-fx-background-color: #0984e3; -fx-background-radius: 15;" text="2025-Technology" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutY="275.0" prefHeight="0.0" prefWidth="789.0" />
+      <TableView fx:id="tblBatch" layoutX="25.0" layoutY="320.0" prefHeight="288.0" prefWidth="486.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../style/tableView.css">
+        <columns>
+          <TableColumn fx:id="colBatchId" prefWidth="243.0" text="Batch ID" />
+          <TableColumn fx:id="colBatchName" prefWidth="242.0" text="Batch Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="567.0" layoutY="571.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #e17055;" stylesheets="@../style/button.css" text="Update Details" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="567.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnRemoveBatchOnAction" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #d63031;" stylesheets="@../style/button.css" text="Remove Batch" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="567.0" layoutY="318.0" mnemonicParsing="false" onAction="#AddBatch" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #0984e3;" stylesheets="@../style/button.css" text="Add Batch" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtYearTwo" layoutX="567.0" layoutY="464.0" onAction="#txtSearchOnAction" prefHeight="33.0" prefWidth="166.0" promptText="Batch Name" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtNameTwo" layoutX="567.0" layoutY="518.0" prefHeight="33.0" prefWidth="166.0" promptText="Batch Name" stylesheets="@../style/txtfields.css" />
+   </children>
+</AnchorPane>

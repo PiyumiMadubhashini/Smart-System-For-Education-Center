@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="314.0" prefWidth="494.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelpFormController">
+   <children>
+      <Label layoutX="85.0" layoutY="139.0" text="For any help or support Contact us ">
+         <font>
+            <Font name="Arial Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="77.0" text="InfoBlox Developers" textFill="#bcbcbc" />
+      <ImageView fitHeight="75.0" fitWidth="159.0" layoutX="43.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Rogo.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="123.0" prefHeight="0.0" prefWidth="492.0" />
+      <Label layoutX="203.0" layoutY="192.0" text="011-8965425" textFill="#6b6b6b">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="223.0" text="infoblox@gmail.com" textFill="#6b6b6b">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="256.0" text="InfoBlox Developers" textFill="#6b6b6b">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="22.0" fitWidth="28.0" layoutX="146.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R%20(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="28.0" layoutX="146.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R%20(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="28.0" layoutX="146.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R%20(5).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

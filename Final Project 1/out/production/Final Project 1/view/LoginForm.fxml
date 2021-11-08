@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="144.0" prefWidth="600.0" style="-fx-background-color: #0047A5;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/desafio.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" layoutX="164.0" layoutY="52.0" prefHeight="23.0" prefWidth="436.0" text="Desafio Higher Education Center" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="164.0" layoutY="77.0" prefHeight="22.0" prefWidth="412.0" text="Education is an art spread it with love" textFill="#7dc5ff">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtUserId" layoutX="177.0" layoutY="211.0" onAction="#txtUserNameOnAction" prefHeight="31.0" prefWidth="258.0" promptText="User ID" stylesheets="@../style/txtfields.css" />
+      <PasswordField fx:id="txtPassword" layoutX="177.0" layoutY="282.0" prefHeight="31.0" prefWidth="258.0" promptText="Password" stylesheets="@../style/txtfields.css" />
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="125.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="125.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="156.0" layoutY="388.0" mnemonicParsing="false" onAction="#btnOpenDashboardOnAction" prefHeight="31.0" prefWidth="284.0" style="-fx-background-color: #0047A5;" stylesheets="@../style/button.css" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="246.0" layoutY="436.0" onMouseClicked="#lblOpenSignUpFormOnClick" text="Create New Account." textFill="#0047a5">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXCheckBox fx:id="ckBox" layoutX="306.0" layoutY="332.0" onAction="#cKBoxOnAction" text="Show Password" />
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="386.0" layoutY="480.0" prefHeight="22.0" prefWidth="207.0" text="Designed By @Piyumi Madubhashini" textFill="#bcbcbc">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="564.0" prefWidth="1573.0" style="-fx-background-color: white; -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherManagementFormController">
+   <children>
+      <Pane prefHeight="62.0" prefWidth="1584.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="21.0" text="Teacher Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtTeacherID" layoutX="17.0" layoutY="154.0" onKeyPressed="#txtSearchOnAction" prefHeight="33.0" prefWidth="241.0" promptText="Teacher ID" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTsunami" layoutX="17.0" layoutY="204.0" prefHeight="33.0" prefWidth="241.0" promptText="Sure Name" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTeacherGender" layoutX="283.0" layoutY="204.0" prefHeight="33.0" prefWidth="241.0" promptText="Gender" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtExperience" layoutX="19.0" layoutY="305.0" prefHeight="33.0" prefWidth="241.0" promptText="Experience" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTeacherCity" layoutX="18.0" layoutY="257.0" prefHeight="33.0" prefWidth="241.0" promptText="City" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtQualification" layoutX="284.0" layoutY="257.0" prefHeight="33.0" prefWidth="241.0" promptText="Qualification" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTeacherFname" layoutX="284.0" layoutY="154.0" prefHeight="33.0" prefWidth="241.0" promptText="First Name" stylesheets="@../style/txtfields.css" />
+      <Button layoutX="363.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnSaveTeacherOnAction" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: blue;" stylesheets="@../style/button.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblTeacher" layoutX="557.0" layoutY="120.0" prefHeight="389.0" prefWidth="988.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../style/tableView.css">
+        <columns>
+          <TableColumn fx:id="colTID" prefWidth="97.0" text="Teacher ID" />
+          <TableColumn fx:id="colFName" prefWidth="159.0" text="First Name" />
+            <TableColumn fx:id="colSame" prefWidth="143.0" text="Sure Name" />
+            <TableColumn fx:id="colGender" prefWidth="121.0" text="Gender" />
+            <TableColumn fx:id="colCity" prefWidth="110.0" text="City" />
+            <TableColumn fx:id="colQualification" prefWidth="168.0" text="Qualification" />
+            <TableColumn fx:id="colExperience" prefWidth="189.0" text="Experience" />
+        </columns>
+      </TableView>
+      <Button layoutX="199.0" layoutY="445.0" mnemonicParsing="false" onAction="#btnUpdateTeacherOnAction" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #feca57;" stylesheets="@../style/button.css" text="Update Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="13.0" layoutY="421.0" prefHeight="0.0" prefWidth="530.0" />
+      <Button layoutX="40.0" layoutY="444.0" mnemonicParsing="false" onAction="#btnRemoveTeacherOnAction" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #ff9f43;" stylesheets="@../style/button.css" text="Remove Teacher" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="13.0" layoutY="506.0" prefHeight="0.0" prefWidth="530.0" />
+   </children>
+</AnchorPane>

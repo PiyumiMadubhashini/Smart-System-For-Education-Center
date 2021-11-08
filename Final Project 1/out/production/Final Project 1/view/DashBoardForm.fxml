@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1022.0" prefWidth="1186.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="686.0" fitWidth="978.0" layoutX="250.0" layoutY="370.0" opacity="0.13" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/1.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="245.0" prefHeight="62.0" prefWidth="988.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="31.0" text="Desafio Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="334.0" layoutY="92.0" prefHeight="137.0" prefWidth="231.0" style="-fx-background-color: #ff6b6b; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/user-7.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="102.0" text="Number of Student" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentCount" alignment="TOP_CENTER" layoutX="88.0" layoutY="28.0" prefHeight="52.0" prefWidth="137.0" text="1000" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="618.0" layoutY="92.0" prefHeight="137.0" prefWidth="231.0" style="-fx-background-color: #5f27cd; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/user-6.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="102.0" text="Number of Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTeacherCount" alignment="TOP_CENTER" layoutX="88.0" layoutY="28.0" prefHeight="52.0" prefWidth="137.0" text="50" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="899.0" layoutY="92.0" prefHeight="137.0" prefWidth="231.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/notebook-4.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="49.0" layoutY="102.0" text="Number of Subjects" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSubjectCount" alignment="TOP_CENTER" layoutX="88.0" layoutY="28.0" prefHeight="52.0" prefWidth="137.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="374.0" layoutY="510.0" prefHeight="149.0" prefWidth="672.0" style="-fx-border-color: #341f97; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="204.0" layoutY="31.0" onMouseClicked="#imgAddStudentOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/plus.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.4" />
+               </effect>
+            </ImageView>
+            <Label layoutX="200.0" layoutY="103.0" text="Add Student">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="399.0" layoutY="31.0" onMouseClicked="#imgOPeCreateIdFormOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/id-card-1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.4" />
+               </effect>
+            </ImageView>
+            <Label layoutX="384.0" layoutY="103.0" text="Create ID Card">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="407.0" layoutY="499.0" style="-fx-background-color: white;" text="Register Student">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="375.0" layoutY="713.0" prefHeight="149.0" prefWidth="672.0" style="-fx-border-color: #341f97; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="207.0" layoutY="31.0" onMouseClicked="#lblOPenAddNewBatchForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/plus.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.4" />
+               </effect>
+            </ImageView>
+            <Label layoutX="193.0" layoutY="102.0" text="Add New Batch">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="400.0" layoutY="31.0" onMouseClicked="#imgOPenScheduleForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/calendar-7.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.4" />
+               </effect>
+            </ImageView>
+            <Label layoutX="378.0" layoutY="102.0" text="Lecture Schedule">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="407.0" layoutY="703.0" style="-fx-background-color: white;" text="Batch and Lectures ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="245.0" layoutY="256.0" prefHeight="3.0" prefWidth="978.0" />
+      <Label layoutX="994.0" layoutY="448.0" text="Menu Board" textFill="#808080">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="339.0" layoutY="277.0" prefHeight="58.0" prefWidth="272.0" style="-fx-background-color: transparent; -fx-border-color: #2d3436;">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="858.0" layoutY="277.0" prefHeight="58.0" prefWidth="272.0" style="-fx-background-color: transparent; -fx-border-color: #2d3436;">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Separator layoutX="245.0" layoutY="354.0" prefHeight="3.0" prefWidth="978.0" />
+      <AnchorPane prefHeight="1022.0" prefWidth="247.0" style="-fx-background-color: #0047A5;">
+         <children>
+            <ImageView fitHeight="224.0" fitWidth="249.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/desafio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgStudentManagement" fitHeight="69.0" fitWidth="61.0" layoutX="93.0" layoutY="268.0" onMouseClicked="#imgViewStudentManagement" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/id-card-3.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="337.0" text="Student Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="58.0" layoutX="97.0" layoutY="382.0" onMouseClicked="#imgViewSubjectManagement" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/notebook-4.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="452.0" text="Subject Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="69.0" layoutX="95.0" layoutY="607.0" onMouseClicked="#imgViewFinancialManagement" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/calculator-1.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="681.0" text="Financial Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="95.0" layoutY="722.0" onMouseClicked="#imgViewAttendanceOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/calendar-1.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="790.0" text="Attendence Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="95.0" layoutY="836.0" onMouseClicked="#imgReportingForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/controls-7.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="901.0" text="Reporting Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="93.0" layoutY="493.0" onMouseClicked="#imgViewTeacherManagement" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/user-6.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="564.0" text="Teacher Management" textFill="#74b9ff">
+               <font>
+                  <Font name="Arial Narrow Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="2.0" layoutY="971.0" opacity="0.22" prefHeight="3.0" prefWidth="245.0" />
+            <Label layoutX="12.0" layoutY="983.0" onMouseClicked="#lblOPenHelOnClick" prefHeight="25.0" prefWidth="69.0" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="766.0" prefWidth="1114.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScheduleFormController">
+   <children>
+      <Pane prefHeight="779.0" prefWidth="123.0" style="-fx-background-color: #0047A5;">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="110.0" layoutX="11.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/desafio.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="147.0" layoutY="22.0" prefHeight="27.0" prefWidth="207.0" text="Lecture Schedule">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="123.0" layoutY="64.0" prefHeight="49.0" prefWidth="991.0" style="-fx-background-color: #f1f2f6;">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="77.0" layoutX="923.0" layoutY="15.0" onMouseClicked="#btnOpenScheduleDetails" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/calendar-1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="77.0" layoutX="875.0" layoutY="15.0" onMouseClicked="#imgOpenSchedulingForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/icon/add-3.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="lisView" layoutX="154.0" layoutY="139.0" prefHeight="543.0" prefWidth="821.0" />
+   </children>
+</AnchorPane>

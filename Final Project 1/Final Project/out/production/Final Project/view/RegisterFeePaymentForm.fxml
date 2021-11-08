@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="958.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFeePaymentFormController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="673.0" layoutX="307.0" layoutY="56.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R44.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="673.0" layoutX="1.0" layoutY="56.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R44.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-5.0" layoutY="-6.0" prefHeight="62.0" prefWidth="974.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="35.0" layoutY="21.0" text="Register Fee Payment Sheet" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="795.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnHandOutOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #0984e3;" stylesheets="@../style/button.css" text="Collect" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="684.0" layoutY="170.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #e17055;" stylesheets="@../style/button.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="35.0" layoutY="144.0" text="Collected Amount" textFill="#2d3436">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCollectedAmount" layoutX="190.0" layoutY="138.0" stylesheets="@../style/txtfields.css" text="0" />
+      <Separator layoutY="232.0" prefHeight="5.0" prefWidth="964.0" />
+      <TableView fx:id="tblHandOut" layoutX="27.0" layoutY="327.0" prefHeight="350.0" prefWidth="634.0" stylesheets="@../style/tableView.css">
+        <columns>
+          <TableColumn fx:id="colHandOutId" prefWidth="171.0" text="Hand Out ID" />
+          <TableColumn fx:id="colHandAmount" prefWidth="231.0" text="Collected Amount" />
+            <TableColumn fx:id="colDateAndTime" prefWidth="231.0" text="Date And Time" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblHid" layoutX="159.0" layoutY="264.0" prefHeight="21.0" prefWidth="148.0" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="747.0" layoutY="646.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: #e17055;" stylesheets="@../style/button.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblTime" alignment="TOP_CENTER" layoutX="553.0" layoutY="82.0" prefHeight="31.0" prefWidth="148.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="TOP_CENTER" layoutX="747.0" layoutY="82.0" prefHeight="31.0" prefWidth="148.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="266.0" text="Collect ID :" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BatchPayment" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c5a95238-ef99-4b62-9223-19938da01da1">
+	<parameter name="paymentId" class="java.lang.String"/>
+	<parameter name="batchId" class="java.lang.String"/>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="expectedFee" class="java.lang.Integer"/>
+	<parameter name="payment" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<line direction="BottomUp">
+				<reportElement positionType="FixRelativeToBottom" x="-20" y="101" width="595" height="1" uuid="c096a6a0-bdc1-4cb2-b60a-4fad528b2517"/>
+			</line>
+			<staticText>
+				<reportElement x="220" y="44" width="198" height="30" forecolor="#70A1FE" uuid="4db926ad-d9b5-4db1-bc45-790bd3aabd3a"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rawatawatte - Moratuwa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="14" width="396" height="30" forecolor="#0047A5" uuid="7636d165-f9b1-45c7-8b21-e7c6943abbd2"/>
+				<textElement>
+					<font fontName="Arial" size="23" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desafio Higher Education Center]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="0" width="87" height="85" uuid="0d52be9d-1637-44f7-a07d-22158e6bb797"/>
+				<imageExpression><![CDATA["D:/zip/Final Project 1/Final Project 1/Final Project/src/assest/desafio.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="420" y="74" width="145" height="20" forecolor="#757575" uuid="88532715-5a60-4fa7-9750-d55fcd4b1b5a"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[All Right Reserved]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="18" width="595" height="30" forecolor="#424242" uuid="36428c31-15c3-4d7c-9143-4a2f69e09b5f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Batch Payment Slip
+]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="455" y="7" width="100" height="30" forecolor="#A1A1A1" uuid="43324c74-87f3-471b-9921-12a3736e2d61"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="6" width="100" height="30" forecolor="#A1A1A1" uuid="37880f65-d529-4d47-bba0-ba6f6d04aa87"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="48" width="555" height="22" uuid="aa40a1e1-75cd-4ee5-9f77-1ec8fd5b2c47"/>
+				<textElement>
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-----------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="292" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="127" height="20" uuid="a1d29a21-b4bb-46cc-b300-2308cdf09003"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment ID :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="61" width="127" height="20" uuid="0023d274-3f08-496f-ac33-e46b179b3c89"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Batch ID :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="113" width="127" height="20" uuid="9c521476-134e-4f0c-b094-a37fd7b811c9"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="182" width="127" height="20" uuid="2b4bd661-471a-46b8-8ea3-bf4e850307c0"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Expected Fee :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="232" width="127" height="20" uuid="3a9e355b-fabd-4795-adaf-e408f0451df1"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="20" width="300" height="30" uuid="d8572f77-eb94-4e09-8f78-6ed50fc91cb4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paymentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="60" width="300" height="30" uuid="ecee36cb-7dcc-46bb-9b20-391b59dc8853"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{batchId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="110" width="300" height="30" uuid="51241426-74be-4681-a1f4-a026781b4fc6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="187" width="300" height="20" uuid="4ac3d7cc-2b9c-42e3-8b52-39160a3d808d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{expectedFee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="232" width="300" height="20" uuid="97c6289f-5648-49e3-9f55-de0a962b7f12"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{payment}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="187" width="30" height="20" uuid="e9e04c8d-765d-4690-87e7-3be2d7ee6f22"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="232" width="30" height="20" uuid="779723da-b7e1-43f2-9d3e-828cb309e44f"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Rs.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="140" width="555" height="22" forecolor="#B3B3B3" uuid="39e78d4e-e9b4-49b4-bfbe-3d3c377ae4c6"/>
+				<textElement>
+					<font fontName="Arial" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-----------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="65" splitType="Stretch">
+			<line>
+				<reportElement x="416" y="17" width="140" height="1" uuid="6f00c317-7ba4-47ae-a3c3-727596e4a4ad"/>
+			</line>
+			<staticText>
+				<reportElement x="423" y="20" width="124" height="24" forecolor="#050505" uuid="46e46b6c-7762-4b1c-8b91-e8b4f843e0ca"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Authorized Signature]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement positionType="FixRelativeToBottom" x="-20" y="63" width="595" height="1" uuid="953ad65a-0727-4883-a704-eb3eee2b51f4"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="149" splitType="Stretch">
+			<staticText>
+				<reportElement x="73" y="64" width="100" height="18" forecolor="#7D7D7D" uuid="69713ae0-40df-4871-b5c2-066ab3dee26f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desafio EDU]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="59" width="26" height="30" uuid="e4fa1874-c69f-4f15-a2d7-4f4a6f3421d9"/>
+				<imageExpression><![CDATA["D:/zip/Final Project 1/Final Project 1/Final Project/src/assest/R (5).png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="29" y="16" width="26" height="29" uuid="e83d5776-b4fc-4d74-ad8b-80ae640d6a89"/>
+				<imageExpression><![CDATA["D:/zip/Final Project 1/Final Project 1/Final Project/src/assest/R (6).png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="73" y="105" width="136" height="18" forecolor="#7D7D7D" uuid="4be92c61-dceb-4af6-896c-faa5d36c4b2d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desafioedu@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="24" width="100" height="18" forecolor="#7D7D7D" uuid="038f41e5-7314-4fa3-94b8-517bf31ca524"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[011-8969587]]></text>
+			</staticText>
+			<image>
+				<reportElement x="31" y="101" width="24" height="27" uuid="c349148f-3b65-4ebe-8a4c-59b91156df45"/>
+				<imageExpression><![CDATA["D:/zip/Final Project 1/Final Project 1/Final Project/src/assest/R (7).png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

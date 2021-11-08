@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="851.0" prefWidth="1292.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinancialManagementController">
+   <children>
+      <Pane prefHeight="62.0" prefWidth="1292.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="20.0" text="Financial Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="103.0" layoutY="140.0" onMouseClicked="#lblRegFeePaymentOnClick" prefHeight="99.0" prefWidth="231.0" style="-fx-background-color: #ff6b6b; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="53.0" layoutY="45.0" prefHeight="34.0" prefWidth="125.0" text="Register Fee" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="77.0" fitWidth="87.0" layoutX="77.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/R%20(4).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.18" contrast="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="531.0" layoutY="140.0" onMouseClicked="#lblBatchPaymentOnClick" prefHeight="99.0" prefWidth="231.0" style="-fx-background-color: #5f27cd; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="49.0" layoutY="43.0" prefHeight="42.0" prefWidth="158.0" text="Batch Payment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="77.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/R4.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="959.0" layoutY="140.0" onMouseClicked="#lblStudentPaymentOnClick" prefHeight="99.0" prefWidth="231.0" style="-fx-background-color: #1dd1a1; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="32.0" layoutY="43.0" prefHeight="42.0" prefWidth="167.0" text="Student Payment" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="90.0" layoutX="81.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/2861214.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.37" contrast="0.02" />
+               </effect>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="295.0" prefHeight="0.0" prefWidth="1285.0" />
+   </children>
+</AnchorPane>

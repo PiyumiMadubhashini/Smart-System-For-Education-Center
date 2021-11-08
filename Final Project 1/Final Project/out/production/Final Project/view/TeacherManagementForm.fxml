@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="564.0" prefWidth="1573.0" style="-fx-background-color: white; -fx-border-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherManagementFormController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="604.0" layoutX="1077.0" layoutY="62.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R44.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="501.0" fitWidth="561.0" layoutX="544.0" layoutY="62.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R44.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="501.0" fitWidth="561.0" layoutY="62.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/R44.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="62.0" prefWidth="1584.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="21.0" text="Teacher Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtTeacherID" layoutX="17.0" layoutY="154.0" onKeyPressed="#txtSearchOnAction" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="Teacher ID" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTsunami" layoutX="17.0" layoutY="204.0" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="Sure Name" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtExperience" layoutX="19.0" layoutY="305.0" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="Experience" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTeacherCity" layoutX="18.0" layoutY="257.0" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="City" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtQualification" layoutX="284.0" layoutY="257.0" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="Qualification" stylesheets="@../style/txtfields.css" />
+      <TextField fx:id="txtTeacherFname" layoutX="284.0" layoutY="154.0" onKeyReleased="#textFieldOnKeyReleased" prefHeight="33.0" prefWidth="241.0" promptText="First Name" stylesheets="@../style/txtfields.css" />
+      <Button fx:id="btnSave" layoutX="363.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnSaveTeacherOnAction" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: blue;" stylesheets="@../style/button.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblTeacher" layoutX="570.0" layoutY="111.0" prefHeight="389.0" prefWidth="988.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../style/tableView.css">
+        <columns>
+          <TableColumn fx:id="colTID" prefWidth="97.0" text="Teacher ID" />
+          <TableColumn fx:id="colFName" prefWidth="159.0" text="First Name" />
+            <TableColumn fx:id="colSame" prefWidth="143.0" text="Sure Name" />
+            <TableColumn fx:id="colGender" prefWidth="121.0" text="Gender" />
+            <TableColumn fx:id="colCity" prefWidth="110.0" text="City" />
+            <TableColumn fx:id="colQualification" prefWidth="168.0" text="Qualification" />
+            <TableColumn fx:id="colExperience" prefWidth="189.0" text="Experience" />
+        </columns>
+      </TableView>
+      <Button layoutX="199.0" layoutY="445.0" mnemonicParsing="false" onAction="#btnUpdateTeacherOnAction" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #feca57;" stylesheets="@../style/button.css" text="Update Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="13.0" layoutY="421.0" prefHeight="0.0" prefWidth="530.0" />
+      <Button layoutX="40.0" layoutY="444.0" mnemonicParsing="false" onAction="#btnRemoveTeacherOnAction" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #ff9f43;" stylesheets="@../style/button.css" text="Remove Teacher" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="13.0" layoutY="506.0" prefHeight="0.0" prefWidth="530.0" />
+      <ComboBox fx:id="cmdGender" layoutX="284.0" layoutY="214.0" prefHeight="33.0" prefWidth="241.0" style="-fx-background-color: transparent; -fx-border-color: #3842FB; -fx-border-radius: 15;" />
+      <Label layoutX="309.0" layoutY="204.0" style="-fx-background-color: white;" text="Gender" textFill="#838383" />
+   </children>
+</AnchorPane>
