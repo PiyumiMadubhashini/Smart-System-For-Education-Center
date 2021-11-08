@@ -1,5 +1,5 @@
 # Desafio Smart System <h1> 
-![Logo](D:\zip\Final Project 1\Final Project 1\Final Project\src\assest\icon\desafio.png)
+![Logo](assest/desafio.png)
 
  Nowadays , even small institute has big database system to manage
 their requirements. It's mean even small institute has generated big
@@ -14,10 +14,10 @@ Better interaction with student and teachers
 
 ## Screenshots <h2> 
 
-![ss-1](D:\zip\Final Project 1\Final Project 1\Final Project\src\assest\icon\3.PNG)
-![ss-2](D:\zip\Final Project 1\Final Project 1\Final Project\src\assest\icon\7.PNG)
-![ss-3](D:\zip\Final Project 1\Final Project 1\Final Project\src\assest\icon\8.PNG)
-![ss-4](D:\zip\Final Project 1\Final Project 1\Final Project\src\assest\icon\14.PNG)
+![ss-1](assest/icon/3.PNG)
+![ss-2](assest/icon/7.PNG)
+![ss-3](assest/icon/8.PNG)
+![ss-4](assest/icon/14.PNG)
 
 ### Technologies I used 
 - Java - Mysql - CSS
