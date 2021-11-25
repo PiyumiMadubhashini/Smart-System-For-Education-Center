@@ -282,7 +282,7 @@ public class LectureScheduleFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image = new Image("assest/desafio.png");
+        Image image = new Image("Readme/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("Schedule Detail");
         stage.show();

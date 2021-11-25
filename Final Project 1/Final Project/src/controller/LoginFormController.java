@@ -2,7 +2,6 @@ package controller;
 
 import com.jfoenix.controls.JFXCheckBox;
 import db.DBConnection;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -82,7 +81,7 @@ public class LoginFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image= new Image("assest/desafio.png");
+        Image image= new Image("Readme/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("User Authentication");
         stage.show();

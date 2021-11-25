@@ -1,5 +1,5 @@
 # Desafio Smart System <h1>
-![Logo](assest/desafio.png)
+![Logo](assest\desafio.png)
 
 Nowadays , even small institute has big database system to manage
 their requirements. It's mean even small institute has generated big
