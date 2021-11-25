@@ -38,7 +38,7 @@ public class ScheduleFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image = new Image("Readme/desafio.png");
+        Image image = new Image("assest/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("Lecture Scheduling");
         stage.show();
@@ -51,7 +51,7 @@ public class ScheduleFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image = new Image("Readme/desafio.png");
+        Image image = new Image("assest/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("Schedule Detail");
         stage.show();

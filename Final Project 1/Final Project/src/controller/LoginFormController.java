@@ -81,7 +81,7 @@ public class LoginFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image= new Image("Readme/desafio.png");
+        Image image= new Image("assest/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("User Authentication");
         stage.show();
