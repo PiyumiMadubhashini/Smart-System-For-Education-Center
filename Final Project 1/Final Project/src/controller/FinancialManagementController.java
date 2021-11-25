@@ -37,7 +37,7 @@ public class FinancialManagementController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image= new Image("Readme/desafio.png");
+        Image image= new Image("assest/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("Batch Payment Sheet");
         stage.show();
@@ -49,7 +49,7 @@ public class FinancialManagementController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-        Image image= new Image("Readme/desafio.png");
+        Image image= new Image("assest/desafio.png");
         stage.getIcons().add(image);
         stage.setTitle("Register Fee Payment Sheet");
         stage.show();
